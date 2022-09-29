@@ -1,0 +1,305 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(9.7px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 82, 85);
+    font-size: 1em;
+}
+
+header nav a {
+    color: rgb(0, 82, 85);
+    text-decoration: none;
+    display: inline-block;
+    padding: .5em;
+    border-bottom: 1px solid transparent;
+    transition: all .6s ease;
+}
+
+header nav a:hover {
+    border-bottom: 1px solid rgb(0, 82, 85);
+}
+
+hr {
+    display: none;
+}
+
+/* main section */
+
+#about #perkenalan{
+    background-color: rgb(11, 51, 56);
+    padding: 5em 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about h2  {
+    display: none;
+}
+
+#about #perkenalan h3 {
+    text-align: center;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+}
+#about #perkenalan p {
+    color: white;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#about #perkenalan img {
+    border: 5px solid white;
+    text-align: center;
+    width: 200px;
+    margin: 1em;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.about-me {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 5em;
+    gap: 2em;
+}
+
+.about-me #skill, .about-me #pendidikan, .about-me #pengalaman {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 2em;
+    transition: all .5s ease;
+}
+
+.about-me #skill:hover, .about-me #pendidikan:hover, .about-me #pengalaman:hover{
+    transform: scale(1.1);
+}
+
+.about-me h3 {
+    color: rgb(0, 82, 85);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+
+}
+
+li {
+    line-height: 2em;
+    color: rgb(0, 82, 85);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+summary, p {
+    line-height: 1.5em;
+    color: rgb(0, 82, 85);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#article {
+    background-color: rgb(11, 51, 56);
+    padding: 5em 5em;
+}
+
+#article h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#article article {
+    background-color: white;
+    padding: 1.5em;
+    transition: all .6s ease;
+}
+
+#article article:hover {
+    transform: scale(1.1);
+}
+
+#article article h3 {
+    color: rgb(0, 82, 85);
+    font-size: 1.5em;
+    margin-bottom:.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+#article .my-article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1.2em;
+}
+
+#contact {
+    padding: 5em 10em;
+}
+
+#contact h2 {
+    color: rgb(0, 82, 85);
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#contact form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+form label {
+    color: rgb(0, 82, 85);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: .5em 0;
+}
+
+form input, textarea, button {
+    padding: .8em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+}
+
+button {
+    color: white;
+    background-color: rgb(0, 82, 85);
+    border: 1px solid transparent;
+    margin: 1em 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(11, 51, 56);
+    padding: 5em 10em;
+}
+
+footer h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+footer ul li a {
+    border-bottom: 1px solid transparent;
+    transition: all .5s ease;
+    color: white;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer a:hover {
+    border-bottom: 1px solid white;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    padding: 2em;
+}
+
+.navigasi {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media (max-width: 575.98px) {
+    :root {
+        font-size: 14px;
+    }
+    #article {
+        padding: 5em;
+    }
+    footer {
+        padding:5em;
+    }
+    #article .my-article {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1.2em;
+    }
+    .about-me {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 5em;
+        gap: 2em;
+    }
+    #contact {
+        padding: 5em 5em;
+    }
+    #about #perkenalan {
+        padding: 5em 5em;
+
+    }
+    .navigasi {
+        display: flex;
+        gap: 2em;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        
+    }
+    header {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 767.98px) { 
+    :root {
+        font-size: 14px;
+    }
+    #article .my-article {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1.2em;
+    }
+    .about-me {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 5em;
+        gap: 2em;
+    }
+    #article {
+        background-color: rgb(11, 51, 56);
+        padding: 5em;
+    }    
+    footer {
+        background-color: rgb(11, 51, 56);
+        padding: 5em;
+    }
+ }
+
+@media (max-width: 991.98px) { 
+    :root {
+        font-size: 16px;
+    }
+ }
